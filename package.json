@@ -1,0 +1,45 @@
+{
+  "name": "where-in-the-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MlkMahmud/where-in-the-world.git"
+  },
+  "keywords": [],
+  "author": "Malik Mahmud <almalikmahmud@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MlkMahmud/where-in-the-world/issues"
+  },
+  "homepage": "https://github.com/MlkMahmud/where-in-the-world#readme",
+  "dependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "sass-loader": "^8.0.0",
+    "script-ext-html-webpack-plugin": "^2.1.4",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
