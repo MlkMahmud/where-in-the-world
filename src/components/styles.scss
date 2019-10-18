@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,800&display=swap');
+
+$dark-mode-elements: #2b3845;
+$dark-mode-bg: #202c36;
+$light-mode-text: #111517;
+$light-mode-input: #848484;
+$light-mode-bg: #f9f9f9;
+$dark-mode-text-and-light-mode-elements: #ffffff;
+$font-family: 'Nunito Sans', sans-serif;
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: $font-family;
+}
+
+header {
+  padding: 0 5%;
+  height: 60px;
+  background: $dark-mode-text-and-light-mode-elements;
+  color: $light-mode-text;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: inherit;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.toggle-theme-btn {
+  background: none;
+  color: inherit;
+  border: none;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+header.dark {
+  color: $dark-mode-text-and-light-mode-elements;
+  background-color: $dark-mode-elements;
+}
+
+main {
+  padding: 0 5%;
+  min-height: calc(100vh - 60px);
+  display: inline-block;
+  width: 100%;
+}
+
+main.dark {
+  background-color: $dark-mode-bg;
+}
