@@ -20,8 +20,13 @@
   },
   "homepage": "https://github.com/MlkMahmud/where-in-the-world#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.6",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-lazyload": "^2.6.2",
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.4",
