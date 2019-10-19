@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,800display=swap');
 
 $dark-mode-elements: #2b3845;
 $dark-mode-bg: #202c36;
@@ -64,4 +64,174 @@ main {
 
 main.dark {
   background-color: $dark-mode-bg;
+}
+
+.form-control-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar-wrapper {
+  position: relative;
+  max-width: 400px;
+  color: $light-mode-input;
+  margin: 50px 0;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar-input {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px 0 50px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-bar-btn {
+  color: inherit;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  line-height: 50px;
+}
+
+.select-wrapper {
+  @extend .search-bar-wrapper;
+  max-width: 200px;
+  color: $light-mode-text;
+  width: 100%;
+}
+
+select {
+  font-family: inherit;
+  background: $dark-mode-text-and-light-mode-elements;
+  cursor: pointer;
+  color: inherit;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.fa-chevron-down {
+  position: absolute;
+  font-size: 14px;
+  height: 100%;
+  line-height: 50px;
+  right: 15px;
+  pointer-events: none;
+}
+
+option {
+  font-weight: 600;
+}
+
+option:nth-of-type(1) {
+  display: none;
+}
+
+.form-control-wrapper.dark {
+  & .fa-chevron-down,
+  select,
+  .fa-search,
+  .search-bar-input,
+  .search-bar-input::placeholder {
+    color: #fff;
+  }
+
+  & select,
+  .search-bar-input {
+    background: $dark-mode-elements;
+  }
+}
+
+.country-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+.country-card {
+  height: 350px;
+  width: 250px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15),
+    0 0px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 0px 10px rgba(0, 0, 0, 0.22);
+  color: $light-mode-text;
+  margin-bottom: 50px;
+}
+
+.country-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.country-card-details {
+  padding: 20px;
+}
+
+.country-card-name {
+  display: block;
+  color: inherit;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.country-card-text {
+  color: inherit;
+  display: block;
+  font-size: 14px;
+}
+
+.country-grid.dark {
+  & .country-card {
+    color: $dark-mode-text-and-light-mode-elements;
+    background-color: $dark-mode-elements;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .form-control-wrapper {
+    flex-direction: column;
+  }
+
+  .select-wrapper,
+  .search-bar-wrapper {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .logo {
+    font-size: 16px;
+  }
 }
