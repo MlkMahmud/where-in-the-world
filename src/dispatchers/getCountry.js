@@ -1,4 +1,4 @@
-const getCountry = (name) => async (dispatch) => {
+export default (name) => async (dispatch) => {
   const response = await fetch(`https://restcountries.eu/rest/v2/name/${name}`);
   const [payload] = await response.json();
   return dispatch({
@@ -7,4 +7,4 @@ const getCountry = (name) => async (dispatch) => {
   });
 };
 
-export default getCountry;
+
