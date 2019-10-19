@@ -6,7 +6,6 @@ A single page application built on [REST Countries API](http://restcountries.eu)
 ## Mockups
 ![Home](./design/desktop-preview.jpg)
 ![Mobile](./design/mobile-design-detail-light.jpg)
-![Mobile](./design/mobile-design-home-dark.jpg)
 
 ## Features
  - View all countries
