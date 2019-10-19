@@ -4,7 +4,7 @@
 A single page application built on [REST Countries API](http://restcountries.eu). See it live [here](https://rgb-color-game-1.firebaseapp.com/)
 
 ## Mockups
-![Home](.\design\desktop-preview.jpg)
+![Home](design\desktop-preview.jpg)
 ![Mobile](.\design\mobile-design-detail-light.jpg)
 ![Mobile](.\design\mobile-design-home-dark.jpg)
 
