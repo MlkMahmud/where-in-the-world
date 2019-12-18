@@ -1,7 +1,7 @@
 # Where In The World?
 
 ## About
-A single page application built on [REST Countries API](http://restcountries.eu). See it live [here](https://rgb-color-game-1.firebaseapp.com/)
+A single page application built on [REST Countries API](http://restcountries.eu). See it live [here](https://where-in-the-world-1.firebaseapp.com/)
 
 ## Mockups
 ![Home](./design/desktop-preview.jpg)
